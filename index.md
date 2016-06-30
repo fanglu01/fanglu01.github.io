@@ -1,83 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>An Interactive View of R Datasets</title>
-  <meta charset="utf-8">
-  <meta name="description" content="An Interactive View of R Datasets">
-  <meta name="author" content="Fang Lu">
-  <meta name="generator" content="slidify" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
-    media="only screen and (max-device-width: 480px)" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
-  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
-<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
-<link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
-<link rel=stylesheet href="libraries/widgets/nvd3/css/nv.d3.css"></link>
-<link rel=stylesheet href="libraries/widgets/nvd3/css/rNVD3.css"></link>
-<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+---
+title       : An Interactive View of R Datasets
+subtitle    : Slidify + Shiny
+author      : Fang Lu
+job         : Biologist
+framework   : io2012  # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [shiny, interactive, bootstrap, quiz]  # {}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+ext_widgets : {rCharts: [libraries/nvd3]}
 
-  
-  <!-- Grab CDN jQuery, fall back to local if offline -->
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
-  <script data-main="libraries/frameworks/io2012/js/slides" 
-    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
-  </script>
-  
-  <script src="libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
-<script src="libraries/widgets/nvd3/js/d3.v3.min.js"></script>
-<script src="libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
-<script src="libraries/widgets/nvd3/js/fisheye.js"></script>
+---  
 
+## Introductions
 
-</head>
-<body style="opacity: 0">
-  <slides class="layout-widescreen">
-    
-    <!-- LOGO SLIDE -->
-        <slide class="title-slide segue nobackground">
-  <hgroup class="auto-fadein">
-    <h1>An Interactive View of R Datasets</h1>
-    <h2>Slidify + Shiny</h2>
-    <p>Fang Lu<br/>Biologist</p>
-  </hgroup>
-  <article></article>  
-</slide>
-    
+In this assignment, I use shiny to display a selected dataset of R package interactively, and create a presentation to introduce this function to users and make this application easily accessiable .
 
-    <!-- SLIDES -->
-    <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h2>Introductions</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>In this assignment, I use shiny to display a selected dataset of R package interactively, and create a presentation to introduce this function to users and make this application easily accessiable .</p>
+---  .class #id1
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+## How it works
+The users first select the name of dataset and the number of  observations on the left panel. Then clike the submit button. Accordingly, a summary of the selected dataset and the the number of observations will be shown on the right panel.
 
-<slide class="class" id="id1" style="background:;">
-  <hgroup>
-    <h2>How it works</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>The users first select the name of dataset and the number of  observations on the left panel. Then clike the submit button. Accordingly, a summary of the selected dataset and the the number of observations will be shown on the right panel.</p>
+---  .class #id1 bg:blank
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="class" id="id1" style="background:blank;">
-  <hgroup>
-    <h2>Interactive Console</h2>
-  </hgroup>
-  <article data-timings="">
-    <div class="row-fluid">
+## Interactive Console
+<div class="row-fluid">
   <div class="container-fluid">
     <div class="col-sm-4">
       <form class="well">
@@ -221,95 +169,12 @@
   </div>
 </div>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+--- 
 
-<slide class="" id="slide-4" style="background:;">
-  <hgroup>
-    <h2>Summary</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>The interactive console is working in R Console. However for some reason, the result will not displayed in Slidify for some reason. </p>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+## Summary
 
-<slide class="" id="slide-5" style="background:;">
-  <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+The interactive console is working in R Console. However for some reason, the result will not displayed in Slidify for some reason. 
 
-    <slide class="backdrop"></slide>
-  </slides>
-  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
-    <ul>
-      <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Introductions'>
-         1
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='How it works'>
-         2
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Interactive Console'>
-         3
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Summary'>
-         4
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='NA'>
-         5
-      </a>
-    </li>
-  </ul>
-  </div>  <!--[if IE]>
-    <script 
-      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
-    </script>
-    <script>CFInstall.check({mode: 'overlay'});</script>
-  <![endif]-->
-</body>
-  <!-- Load Javascripts for Widgets -->
-  <script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
-<script src="libraries/widgets/interactive/js/opencpu-0.5.js"></script>
-<script src="libraries/widgets/interactive/js/interactive.js"></script>
-<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
-<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
-<script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
-<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
-<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+--- 
 
-  <script src="shared/shiny.js" type="text/javascript"></script>
-  <script src="shared/slider/js/jquery.slider.min.js"></script>
-  <script src="shared/bootstrap/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
-  
-  <script>  
-  $(function (){ 
-    $("#example").popover(); 
-    $("[rel='tooltip']").tooltip(); 
-  });  
-  </script>  
-  
-  <!-- LOAD HIGHLIGHTER JS FILES -->
-  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
-   
-  </html>

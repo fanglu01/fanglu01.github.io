@@ -1,0 +1,64 @@
+---
+title       : An Interactive View of R Datasets
+subtitle    : Slidify + Shiny
+author      : Fang Lu
+job         : Biologist
+framework   : io2012  # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [shiny, interactive, bootstrap, quiz]  # {}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+ext_widgets : {rCharts: [libraries/nvd3]}
+
+---  
+
+## Introductions
+
+In this assignment, I use shiny to display a selected dataset of R package interactively, and create a presentation to introduce this function to users and make this application easily accessiable .
+
+---  .class #id1
+
+## How it works
+The users first select the name of dataset and the number of  observations on the left panel. Then clike the submit button. Accordingly, a summary of the selected dataset and the the number of observations will be shown on the right panel.
+
+---  .class #id1 bg:blank
+
+## Interactive Console
+```{r opts.label = 'shiny'}
+
+slidifyUI(
+  fluidPage(
+  
+  sidebarPanel(
+    selectInput("dataset", "Choose a dataset:", 
+                choices = data()$results[,3]),
+                #choices = c("mpg", "iris")),
+    
+    numericInput("obs", "Number of observations to view:", 10),
+     
+    submitButton("Update View")
+  ),
+  
+  mainPanel(
+    h4("Summary"),
+    verbatimTextOutput("summary"),
+    h4("Observations"),
+    tableOutput("view")
+  )
+)
+
+)
+
+
+``` 
+
+--- 
+
+
+## Summary
+
+The interactive console is working in R Console. To run the app, please go to https://fanglu.shinyapps.io/Shinyapp/ 
+
+--- 
+
