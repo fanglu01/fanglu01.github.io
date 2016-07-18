@@ -77,149 +77,173 @@
     <h2>Interactive Console</h2>
   </hgroup>
   <article data-timings="">
-    <div class="row-fluid">
-  <div class="container-fluid">
-    <div class="col-sm-4">
-      <form class="well">
-        <div class="form-group shiny-input-container">
-          <label class="control-label" for="dataset">Choose a dataset:</label>
-          <div>
-            <select id="dataset"><option value="diamonds" selected>diamonds</option>
-<option value="economics">economics</option>
-<option value="economics_long">economics_long</option>
-<option value="faithfuld">faithfuld</option>
-<option value="luv_colours">luv_colours</option>
-<option value="midwest">midwest</option>
-<option value="mpg">mpg</option>
-<option value="msleep">msleep</option>
-<option value="presidential">presidential</option>
-<option value="seals">seals</option>
-<option value="txhousing">txhousing</option>
-<option value="AirPassengers">AirPassengers</option>
-<option value="BJsales">BJsales</option>
-<option value="BJsales.lead (BJsales)">BJsales.lead (BJsales)</option>
-<option value="BOD">BOD</option>
-<option value="CO2">CO2</option>
-<option value="ChickWeight">ChickWeight</option>
-<option value="DNase">DNase</option>
-<option value="EuStockMarkets">EuStockMarkets</option>
-<option value="Formaldehyde">Formaldehyde</option>
-<option value="HairEyeColor">HairEyeColor</option>
-<option value="Harman23.cor">Harman23.cor</option>
-<option value="Harman74.cor">Harman74.cor</option>
-<option value="Indometh">Indometh</option>
-<option value="InsectSprays">InsectSprays</option>
-<option value="JohnsonJohnson">JohnsonJohnson</option>
-<option value="LakeHuron">LakeHuron</option>
-<option value="LifeCycleSavings">LifeCycleSavings</option>
-<option value="Loblolly">Loblolly</option>
-<option value="Nile">Nile</option>
-<option value="Orange">Orange</option>
-<option value="OrchardSprays">OrchardSprays</option>
-<option value="PlantGrowth">PlantGrowth</option>
-<option value="Puromycin">Puromycin</option>
-<option value="Seatbelts">Seatbelts</option>
-<option value="Theoph">Theoph</option>
-<option value="Titanic">Titanic</option>
-<option value="ToothGrowth">ToothGrowth</option>
-<option value="UCBAdmissions">UCBAdmissions</option>
-<option value="UKDriverDeaths">UKDriverDeaths</option>
-<option value="UKgas">UKgas</option>
-<option value="USAccDeaths">USAccDeaths</option>
-<option value="USArrests">USArrests</option>
-<option value="USJudgeRatings">USJudgeRatings</option>
-<option value="USPersonalExpenditure">USPersonalExpenditure</option>
-<option value="UScitiesD">UScitiesD</option>
-<option value="VADeaths">VADeaths</option>
-<option value="WWWusage">WWWusage</option>
-<option value="WorldPhones">WorldPhones</option>
-<option value="ability.cov">ability.cov</option>
-<option value="airmiles">airmiles</option>
-<option value="airquality">airquality</option>
-<option value="anscombe">anscombe</option>
-<option value="attenu">attenu</option>
-<option value="attitude">attitude</option>
-<option value="austres">austres</option>
-<option value="beaver1 (beavers)">beaver1 (beavers)</option>
-<option value="beaver2 (beavers)">beaver2 (beavers)</option>
-<option value="cars">cars</option>
-<option value="chickwts">chickwts</option>
-<option value="co2">co2</option>
-<option value="crimtab">crimtab</option>
-<option value="discoveries">discoveries</option>
-<option value="esoph">esoph</option>
-<option value="euro">euro</option>
-<option value="euro.cross (euro)">euro.cross (euro)</option>
-<option value="eurodist">eurodist</option>
-<option value="faithful">faithful</option>
-<option value="fdeaths (UKLungDeaths)">fdeaths (UKLungDeaths)</option>
-<option value="freeny">freeny</option>
-<option value="freeny.x (freeny)">freeny.x (freeny)</option>
-<option value="freeny.y (freeny)">freeny.y (freeny)</option>
-<option value="infert">infert</option>
-<option value="iris">iris</option>
-<option value="iris3">iris3</option>
-<option value="islands">islands</option>
-<option value="ldeaths (UKLungDeaths)">ldeaths (UKLungDeaths)</option>
-<option value="lh">lh</option>
-<option value="longley">longley</option>
-<option value="lynx">lynx</option>
-<option value="mdeaths (UKLungDeaths)">mdeaths (UKLungDeaths)</option>
-<option value="morley">morley</option>
-<option value="mtcars">mtcars</option>
-<option value="nhtemp">nhtemp</option>
-<option value="nottem">nottem</option>
-<option value="npk">npk</option>
-<option value="occupationalStatus">occupationalStatus</option>
-<option value="precip">precip</option>
-<option value="presidents">presidents</option>
-<option value="pressure">pressure</option>
-<option value="quakes">quakes</option>
-<option value="randu">randu</option>
-<option value="rivers">rivers</option>
-<option value="rock">rock</option>
-<option value="sleep">sleep</option>
-<option value="stack.loss (stackloss)">stack.loss (stackloss)</option>
-<option value="stack.x (stackloss)">stack.x (stackloss)</option>
-<option value="stackloss">stackloss</option>
-<option value="state.abb (state)">state.abb (state)</option>
-<option value="state.area (state)">state.area (state)</option>
-<option value="state.center (state)">state.center (state)</option>
-<option value="state.division (state)">state.division (state)</option>
-<option value="state.name (state)">state.name (state)</option>
-<option value="state.region (state)">state.region (state)</option>
-<option value="state.x77 (state)">state.x77 (state)</option>
-<option value="sunspot.month">sunspot.month</option>
-<option value="sunspot.year">sunspot.year</option>
-<option value="sunspots">sunspots</option>
-<option value="swiss">swiss</option>
-<option value="treering">treering</option>
-<option value="trees">trees</option>
-<option value="uspop">uspop</option>
-<option value="volcano">volcano</option>
-<option value="warpbreaks">warpbreaks</option>
-<option value="women">women</option></select>
-            <script type="application/json" data-for="dataset" data-nonempty="">{}</script>
-          </div>
-        </div>
-        <div class="form-group shiny-input-container">
-          <label for="obs">Number of observations to view:</label>
-          <input id="obs" type="number" class="form-control" value="10"/>
-        </div>
-        <span class="help-block">Note: while the data view will show only the specified number of observations, the summary will still be based on the full dataset.</span>
-        <div>
-          <button type="submit" class="btn btn-primary">Update View</button>
-        </div>
-      </form>
-    </div>
-    <div class="col-sm-8">
-      <h4>Summary</h4>
-      <pre id="summary" class="shiny-text-output"></pre>
-      <h4>Observations</h4>
-      <div id="view" class="shiny-html-output"></div>
-    </div>
-  </div>
-</div>
+    <pre><code class="r">slidifyUI(
+  fluidPage(
+
+  sidebarPanel(
+    selectInput(&quot;dataset&quot;, &quot;Choose a dataset:&quot;, 
+                choices = data()$results[,3]),
+                #choices = c(&quot;mpg&quot;, &quot;iris&quot;)),
+
+    numericInput(&quot;obs&quot;, &quot;Number of observations to view:&quot;, 10),
+
+    submitButton(&quot;Update View&quot;)
+  ),
+
+  mainPanel(
+    h4(&quot;Summary&quot;),
+    verbatimTextOutput(&quot;summary&quot;),
+    h4(&quot;Observations&quot;),
+    tableOutput(&quot;view&quot;)
+  )
+)
+
+)
+</code></pre>
+
+<pre><code>## &lt;div class=&quot;row-fluid&quot;&gt;
+##   &lt;div class=&quot;container-fluid&quot;&gt;
+##     &lt;div class=&quot;col-sm-4&quot;&gt;
+##       &lt;form class=&quot;well&quot;&gt;
+##         &lt;div class=&quot;form-group shiny-input-container&quot;&gt;
+##           &lt;label class=&quot;control-label&quot; for=&quot;dataset&quot;&gt;Choose a dataset:&lt;/label&gt;
+##           &lt;div&gt;
+##             &lt;select id=&quot;dataset&quot;&gt;&lt;option value=&quot;diamonds&quot; selected&gt;diamonds&lt;/option&gt;
+## &lt;option value=&quot;economics&quot;&gt;economics&lt;/option&gt;
+## &lt;option value=&quot;economics_long&quot;&gt;economics_long&lt;/option&gt;
+## &lt;option value=&quot;faithfuld&quot;&gt;faithfuld&lt;/option&gt;
+## &lt;option value=&quot;luv_colours&quot;&gt;luv_colours&lt;/option&gt;
+## &lt;option value=&quot;midwest&quot;&gt;midwest&lt;/option&gt;
+## &lt;option value=&quot;mpg&quot;&gt;mpg&lt;/option&gt;
+## &lt;option value=&quot;msleep&quot;&gt;msleep&lt;/option&gt;
+## &lt;option value=&quot;presidential&quot;&gt;presidential&lt;/option&gt;
+## &lt;option value=&quot;seals&quot;&gt;seals&lt;/option&gt;
+## &lt;option value=&quot;txhousing&quot;&gt;txhousing&lt;/option&gt;
+## &lt;option value=&quot;AirPassengers&quot;&gt;AirPassengers&lt;/option&gt;
+## &lt;option value=&quot;BJsales&quot;&gt;BJsales&lt;/option&gt;
+## &lt;option value=&quot;BJsales.lead (BJsales)&quot;&gt;BJsales.lead (BJsales)&lt;/option&gt;
+## &lt;option value=&quot;BOD&quot;&gt;BOD&lt;/option&gt;
+## &lt;option value=&quot;CO2&quot;&gt;CO2&lt;/option&gt;
+## &lt;option value=&quot;ChickWeight&quot;&gt;ChickWeight&lt;/option&gt;
+## &lt;option value=&quot;DNase&quot;&gt;DNase&lt;/option&gt;
+## &lt;option value=&quot;EuStockMarkets&quot;&gt;EuStockMarkets&lt;/option&gt;
+## &lt;option value=&quot;Formaldehyde&quot;&gt;Formaldehyde&lt;/option&gt;
+## &lt;option value=&quot;HairEyeColor&quot;&gt;HairEyeColor&lt;/option&gt;
+## &lt;option value=&quot;Harman23.cor&quot;&gt;Harman23.cor&lt;/option&gt;
+## &lt;option value=&quot;Harman74.cor&quot;&gt;Harman74.cor&lt;/option&gt;
+## &lt;option value=&quot;Indometh&quot;&gt;Indometh&lt;/option&gt;
+## &lt;option value=&quot;InsectSprays&quot;&gt;InsectSprays&lt;/option&gt;
+## &lt;option value=&quot;JohnsonJohnson&quot;&gt;JohnsonJohnson&lt;/option&gt;
+## &lt;option value=&quot;LakeHuron&quot;&gt;LakeHuron&lt;/option&gt;
+## &lt;option value=&quot;LifeCycleSavings&quot;&gt;LifeCycleSavings&lt;/option&gt;
+## &lt;option value=&quot;Loblolly&quot;&gt;Loblolly&lt;/option&gt;
+## &lt;option value=&quot;Nile&quot;&gt;Nile&lt;/option&gt;
+## &lt;option value=&quot;Orange&quot;&gt;Orange&lt;/option&gt;
+## &lt;option value=&quot;OrchardSprays&quot;&gt;OrchardSprays&lt;/option&gt;
+## &lt;option value=&quot;PlantGrowth&quot;&gt;PlantGrowth&lt;/option&gt;
+## &lt;option value=&quot;Puromycin&quot;&gt;Puromycin&lt;/option&gt;
+## &lt;option value=&quot;Seatbelts&quot;&gt;Seatbelts&lt;/option&gt;
+## &lt;option value=&quot;Theoph&quot;&gt;Theoph&lt;/option&gt;
+## &lt;option value=&quot;Titanic&quot;&gt;Titanic&lt;/option&gt;
+## &lt;option value=&quot;ToothGrowth&quot;&gt;ToothGrowth&lt;/option&gt;
+## &lt;option value=&quot;UCBAdmissions&quot;&gt;UCBAdmissions&lt;/option&gt;
+## &lt;option value=&quot;UKDriverDeaths&quot;&gt;UKDriverDeaths&lt;/option&gt;
+## &lt;option value=&quot;UKgas&quot;&gt;UKgas&lt;/option&gt;
+## &lt;option value=&quot;USAccDeaths&quot;&gt;USAccDeaths&lt;/option&gt;
+## &lt;option value=&quot;USArrests&quot;&gt;USArrests&lt;/option&gt;
+## &lt;option value=&quot;USJudgeRatings&quot;&gt;USJudgeRatings&lt;/option&gt;
+## &lt;option value=&quot;USPersonalExpenditure&quot;&gt;USPersonalExpenditure&lt;/option&gt;
+## &lt;option value=&quot;UScitiesD&quot;&gt;UScitiesD&lt;/option&gt;
+## &lt;option value=&quot;VADeaths&quot;&gt;VADeaths&lt;/option&gt;
+## &lt;option value=&quot;WWWusage&quot;&gt;WWWusage&lt;/option&gt;
+## &lt;option value=&quot;WorldPhones&quot;&gt;WorldPhones&lt;/option&gt;
+## &lt;option value=&quot;ability.cov&quot;&gt;ability.cov&lt;/option&gt;
+## &lt;option value=&quot;airmiles&quot;&gt;airmiles&lt;/option&gt;
+## &lt;option value=&quot;airquality&quot;&gt;airquality&lt;/option&gt;
+## &lt;option value=&quot;anscombe&quot;&gt;anscombe&lt;/option&gt;
+## &lt;option value=&quot;attenu&quot;&gt;attenu&lt;/option&gt;
+## &lt;option value=&quot;attitude&quot;&gt;attitude&lt;/option&gt;
+## &lt;option value=&quot;austres&quot;&gt;austres&lt;/option&gt;
+## &lt;option value=&quot;beaver1 (beavers)&quot;&gt;beaver1 (beavers)&lt;/option&gt;
+## &lt;option value=&quot;beaver2 (beavers)&quot;&gt;beaver2 (beavers)&lt;/option&gt;
+## &lt;option value=&quot;cars&quot;&gt;cars&lt;/option&gt;
+## &lt;option value=&quot;chickwts&quot;&gt;chickwts&lt;/option&gt;
+## &lt;option value=&quot;co2&quot;&gt;co2&lt;/option&gt;
+## &lt;option value=&quot;crimtab&quot;&gt;crimtab&lt;/option&gt;
+## &lt;option value=&quot;discoveries&quot;&gt;discoveries&lt;/option&gt;
+## &lt;option value=&quot;esoph&quot;&gt;esoph&lt;/option&gt;
+## &lt;option value=&quot;euro&quot;&gt;euro&lt;/option&gt;
+## &lt;option value=&quot;euro.cross (euro)&quot;&gt;euro.cross (euro)&lt;/option&gt;
+## &lt;option value=&quot;eurodist&quot;&gt;eurodist&lt;/option&gt;
+## &lt;option value=&quot;faithful&quot;&gt;faithful&lt;/option&gt;
+## &lt;option value=&quot;fdeaths (UKLungDeaths)&quot;&gt;fdeaths (UKLungDeaths)&lt;/option&gt;
+## &lt;option value=&quot;freeny&quot;&gt;freeny&lt;/option&gt;
+## &lt;option value=&quot;freeny.x (freeny)&quot;&gt;freeny.x (freeny)&lt;/option&gt;
+## &lt;option value=&quot;freeny.y (freeny)&quot;&gt;freeny.y (freeny)&lt;/option&gt;
+## &lt;option value=&quot;infert&quot;&gt;infert&lt;/option&gt;
+## &lt;option value=&quot;iris&quot;&gt;iris&lt;/option&gt;
+## &lt;option value=&quot;iris3&quot;&gt;iris3&lt;/option&gt;
+## &lt;option value=&quot;islands&quot;&gt;islands&lt;/option&gt;
+## &lt;option value=&quot;ldeaths (UKLungDeaths)&quot;&gt;ldeaths (UKLungDeaths)&lt;/option&gt;
+## &lt;option value=&quot;lh&quot;&gt;lh&lt;/option&gt;
+## &lt;option value=&quot;longley&quot;&gt;longley&lt;/option&gt;
+## &lt;option value=&quot;lynx&quot;&gt;lynx&lt;/option&gt;
+## &lt;option value=&quot;mdeaths (UKLungDeaths)&quot;&gt;mdeaths (UKLungDeaths)&lt;/option&gt;
+## &lt;option value=&quot;morley&quot;&gt;morley&lt;/option&gt;
+## &lt;option value=&quot;mtcars&quot;&gt;mtcars&lt;/option&gt;
+## &lt;option value=&quot;nhtemp&quot;&gt;nhtemp&lt;/option&gt;
+## &lt;option value=&quot;nottem&quot;&gt;nottem&lt;/option&gt;
+## &lt;option value=&quot;npk&quot;&gt;npk&lt;/option&gt;
+## &lt;option value=&quot;occupationalStatus&quot;&gt;occupationalStatus&lt;/option&gt;
+## &lt;option value=&quot;precip&quot;&gt;precip&lt;/option&gt;
+## &lt;option value=&quot;presidents&quot;&gt;presidents&lt;/option&gt;
+## &lt;option value=&quot;pressure&quot;&gt;pressure&lt;/option&gt;
+## &lt;option value=&quot;quakes&quot;&gt;quakes&lt;/option&gt;
+## &lt;option value=&quot;randu&quot;&gt;randu&lt;/option&gt;
+## &lt;option value=&quot;rivers&quot;&gt;rivers&lt;/option&gt;
+## &lt;option value=&quot;rock&quot;&gt;rock&lt;/option&gt;
+## &lt;option value=&quot;sleep&quot;&gt;sleep&lt;/option&gt;
+## &lt;option value=&quot;stack.loss (stackloss)&quot;&gt;stack.loss (stackloss)&lt;/option&gt;
+## &lt;option value=&quot;stack.x (stackloss)&quot;&gt;stack.x (stackloss)&lt;/option&gt;
+## &lt;option value=&quot;stackloss&quot;&gt;stackloss&lt;/option&gt;
+## &lt;option value=&quot;state.abb (state)&quot;&gt;state.abb (state)&lt;/option&gt;
+## &lt;option value=&quot;state.area (state)&quot;&gt;state.area (state)&lt;/option&gt;
+## &lt;option value=&quot;state.center (state)&quot;&gt;state.center (state)&lt;/option&gt;
+## &lt;option value=&quot;state.division (state)&quot;&gt;state.division (state)&lt;/option&gt;
+## &lt;option value=&quot;state.name (state)&quot;&gt;state.name (state)&lt;/option&gt;
+## &lt;option value=&quot;state.region (state)&quot;&gt;state.region (state)&lt;/option&gt;
+## &lt;option value=&quot;state.x77 (state)&quot;&gt;state.x77 (state)&lt;/option&gt;
+## &lt;option value=&quot;sunspot.month&quot;&gt;sunspot.month&lt;/option&gt;
+## &lt;option value=&quot;sunspot.year&quot;&gt;sunspot.year&lt;/option&gt;
+## &lt;option value=&quot;sunspots&quot;&gt;sunspots&lt;/option&gt;
+## &lt;option value=&quot;swiss&quot;&gt;swiss&lt;/option&gt;
+## &lt;option value=&quot;treering&quot;&gt;treering&lt;/option&gt;
+## &lt;option value=&quot;trees&quot;&gt;trees&lt;/option&gt;
+## &lt;option value=&quot;uspop&quot;&gt;uspop&lt;/option&gt;
+## &lt;option value=&quot;volcano&quot;&gt;volcano&lt;/option&gt;
+## &lt;option value=&quot;warpbreaks&quot;&gt;warpbreaks&lt;/option&gt;
+## &lt;option value=&quot;women&quot;&gt;women&lt;/option&gt;&lt;/select&gt;
+##             &lt;script type=&quot;application/json&quot; data-for=&quot;dataset&quot; data-nonempty=&quot;&quot;&gt;{}&lt;/script&gt;
+##           &lt;/div&gt;
+##         &lt;/div&gt;
+##         &lt;div class=&quot;form-group shiny-input-container&quot;&gt;
+##           &lt;label for=&quot;obs&quot;&gt;Number of observations to view:&lt;/label&gt;
+##           &lt;input id=&quot;obs&quot; type=&quot;number&quot; class=&quot;form-control&quot; value=&quot;10&quot;/&gt;
+##         &lt;/div&gt;
+##         &lt;div&gt;
+##           &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Update View&lt;/button&gt;
+##         &lt;/div&gt;
+##       &lt;/form&gt;
+##     &lt;/div&gt;
+##     &lt;div class=&quot;col-sm-8&quot;&gt;
+##       &lt;h4&gt;Summary&lt;/h4&gt;
+##       &lt;pre id=&quot;summary&quot; class=&quot;shiny-text-output&quot;&gt;&lt;/pre&gt;
+##       &lt;h4&gt;Observations&lt;/h4&gt;
+##       &lt;div id=&quot;view&quot; class=&quot;shiny-html-output&quot;&gt;&lt;/div&gt;
+##     &lt;/div&gt;
+##   &lt;/div&gt;
+## &lt;/div&gt;
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
@@ -230,7 +254,7 @@
     <h2>Summary</h2>
   </hgroup>
   <article data-timings="">
-    <p>The interactive console is working in R Console. However for some reason, the result will not displayed in Slidify for some reason. </p>
+    <p>The interactive console is working in R Console. To run the app, please go to <a href="https://fanglu.shinyapps.io/Shinyapp/">https://fanglu.shinyapps.io/Shinyapp/</a> </p>
 
   </article>
   <!-- Presenter Notes -->
